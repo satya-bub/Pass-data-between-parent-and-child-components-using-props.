@@ -1,26 +1,33 @@
+<!-- App.vue -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <QuizBuilder />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import QuizBuilder from './components/QuizBuilder.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    QuizBuilder,
+  },
+};
 </script>
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+h2 {
+  color: #3498db;
+}
+
+h3 {
+  color: #e74c3c;
 }
 </style>
